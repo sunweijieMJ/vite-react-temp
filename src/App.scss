@@ -1,0 +1,20 @@
+$color: #fff;
+
+.app {
+    text-align: center;
+
+    .app-header {
+        align-items: center;
+        background-color: #282c34;
+        color: $color;
+        display: flex;
+        flex-direction: column;
+        font-size: calc(10px + 2vmin);
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    button {
+        font-size: calc(10px + 2vmin);
+    }
+}
