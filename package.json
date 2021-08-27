@@ -6,7 +6,8 @@
         "build": "tsc && vite build",
         "serve": "vite preview",
         "lint": "eslint src --ext .js,.ts,.jsx,.tsx,.vue,.svelte",
-        "lint:style": "stylelint src .css,.scss,.less"
+        "lint:style": "stylelint src .css,.scss,.less",
+        "prepare": "husky install"
     },
     "dependencies": {
         "react": "^17.0.0",
