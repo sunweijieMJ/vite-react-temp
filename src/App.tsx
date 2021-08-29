@@ -8,8 +8,11 @@ function App() {
         <div className="app">
             <header className="app-header">
                 <p>
-                    <button type="button" onClick={() => setCount((item) => item + 1)}>
-            count is: {count}
+                    <button
+                        type="button"
+                        onClick={() => setCount((item) => item + 1)}
+                    >
+                        count is: {count}
                     </button>
                 </p>
             </header>
