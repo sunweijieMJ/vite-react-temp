@@ -1,3 +1,15 @@
+# production
+node_modules
+build
+dist
+dist-ssr
+analyzer
+
+# lock
+yarn.lock
+pnpm-lock.yaml
+package-lock.json
+
 # Logs
 logs
 *.log
@@ -7,9 +19,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# env
 *.local
 
 # Editor directories and files
