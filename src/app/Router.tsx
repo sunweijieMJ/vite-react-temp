@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   BrowserRouter,
@@ -17,10 +17,10 @@ import { globalConfigSelector } from '@/redux/selector/global';
 import { advanceModeSelector } from '@/redux/selector/system';
 import storage from '@/utils/storage';
 
-const HomePage = lazy(() => import('@/pages/HomePage'));
-const Setting = lazy(() => import('@/pages/Setting'));
-const Login = lazy(() => import('@/pages/Login'));
-const Layout = lazy(() => import('@/layout/LayoutMain'));
+const HomePage = React.lazy(() => import('@/pages/HomePage'));
+const Setting = React.lazy(() => import('@/pages/Setting'));
+const Login = React.lazy(() => import('@/pages/Login'));
+const Layout = React.lazy(() => import('@/layout/LayoutMain'));
 
 // 免密登录
 const SecretFreeLogin = () => {

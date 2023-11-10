@@ -69,6 +69,15 @@ export default ({ mode }: { mode: string }) => {
               /[\\/]node_modules[\\/]echarts[\\/]/.test(id),
               'echarts',
             );
+            chunkMap.set(/[\\/]node_modules[\\/]axios[\\/]/.test(id), 'axios');
+            chunkMap.set(
+              /[\\/]node_modules[\\/]react-dom[\\/]/.test(id),
+              'axios',
+            );
+            chunkMap.set(
+              /[\\/]node_modules[\\/]localforage[\\/]/.test(id),
+              'reactDom',
+            );
             chunkMap.set(
               /[\\/]node_modules[\\/]lodash[\\/]/.test(id),
               'lodash',
@@ -78,6 +87,10 @@ export default ({ mode }: { mode: string }) => {
               'codemirror',
             );
             chunkMap.set(/[\\/]node_modules[\\/]antd[\\/]/.test(id), 'antd');
+            chunkMap.set(
+              /[\\/]node_modules[\\/]@ant-design[\\/]/.test(id),
+              'antDesign',
+            );
             chunkMap.set(
               /[\\/]node_modules[\\/]video.js[\\/]/.test(id),
               'videoJs',

@@ -3,11 +3,19 @@ import type { MessageInstance } from 'antd/es/message/interface';
 import type { ModalStaticFunctions } from 'antd/es/modal/confirm';
 import type { NotificationInstance } from 'antd/es/notification/interface';
 
-// eslint-disable-next-line import/no-mutable-exports
+/* eslint-disable import/no-mutable-exports */
+
+/**
+ * antd的静态方法message(可消费上下文)
+ */
 let message: MessageInstance;
-// eslint-disable-next-line import/no-mutable-exports
+/**
+ * antd的静态方法notification(可消费上下文)
+ */
 let notification: NotificationInstance;
-// eslint-disable-next-line import/no-mutable-exports
+/**
+ * antd的静态方法modal(可消费上下文)
+ */
 let modal: Omit<ModalStaticFunctions, 'warn'>;
 
 /**

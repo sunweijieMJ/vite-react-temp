@@ -76,7 +76,10 @@ const rules = {
 
 module.exports = defineConfig({
   root: true,
-  env: { browser: true, node: true },
+  env: {
+    browser: true,
+    node: true,
+  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
@@ -89,12 +92,14 @@ module.exports = defineConfig({
     'airbnb-base',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:markdown/recommended',
     'plugin:prettier/recommended',
   ],
   plugins: [
     '@typescript-eslint',
+    'react',
     'react-hooks',
     'prettier',
     'import',
@@ -103,7 +108,7 @@ module.exports = defineConfig({
   ],
   overrides: [
     {
-      files: ['*.js'],
+      files: ['*.js', '*.cjs'],
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
       },
@@ -125,6 +130,9 @@ module.exports = defineConfig({
     },
   ],
   settings: {
+    react: {
+      version: 'detect',
+    },
     'import/resolver': {
       alias: {
         map: [['@', './src']],

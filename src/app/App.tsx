@@ -3,7 +3,7 @@ import {
   StyleProvider,
 } from '@ant-design/cssinjs';
 import { App, ConfigProvider } from 'antd';
-import { useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import ReactDOM from 'react-dom/client';
 import { ErrorBoundary } from 'react-error-boundary';
 import { IntlProvider } from 'react-intl';

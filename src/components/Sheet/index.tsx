@@ -27,7 +27,7 @@ export interface IRefSheet {
   exportExcel: (exportList?: ISheetTemp[], sheetName?: string) => void;
 }
 
-const Sheet = React.forwardRef<IRefSheet, IProps>((props, ref) => {
+const Sheet = React.forwardRef<IRefSheet, IProps>(function Sheet(props, ref) {
   const {
     sheetTemp,
     importSlot,
